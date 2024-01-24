@@ -16,7 +16,7 @@ export default function DetaiListFollow({ route, navigation }){
         try {
           const response = await fetch('https://api.github.com/users/' + userName + '/repos'+'?page='+page, {
             headers: {
-              'Authorization': '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'
+              'Authorization': 'my_token'
             }
           });
       
@@ -46,7 +46,7 @@ export default function DetaiListFollow({ route, navigation }){
         try {
           const response = await fetch('https://api.github.com/users/' + userName, {
             headers: {
-              'Authorization': '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'
+              'Authorization': 'my_token'
             }
           });
       
