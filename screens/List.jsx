@@ -14,7 +14,7 @@ export default function List({navigation}) {
       const modifiedQuery = emptyQuery ? 'a' : queryFinal;
       const response = await fetch('https://api.github.com/search/users?q='+modifiedQuery, {
         headers: {
-          'Authorization': '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'
+          'Authorization': 'my_token'
         }
       });
   
