@@ -14,7 +14,7 @@ export default function Follow({ route, navigation }){
         try {
           const response = await fetch('https://api.github.com/users/' + userName + '/'+type+'?page='+page, {
             headers: {
-              'Authorization': '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'
+              'Authorization': 'my_token'
             }
           });
       
